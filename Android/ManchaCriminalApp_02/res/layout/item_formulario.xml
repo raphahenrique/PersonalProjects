@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+ 	   		android:layout_width="wrap_content"
+  		  	android:layout_height="wrap_content" >
+
+
+	    <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_marginLeft="16dp"
+	        android:layout_marginTop="20dp"
+	        android:text="@string/lblTipo" />
+
+	    
+	    <Spinner
+	        android:id="@+id/cmbTipo"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/txtHora"
+	        android:layout_alignTop="@+id/textView1"
+	        android:layout_toRightOf="@+id/textView4" />
+	  
+	    <EditText
+	        android:id="@+id/txtDesc"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/txtHora"
+	        android:layout_below="@+id/txtHora"
+	        android:ems="10"
+	        android:inputType="textLongMessage" />
+	    <EditText
+	        android:id="@+id/txtHora"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/lblRaio"
+	        android:layout_toRightOf="@+id/textView4"
+	        android:inputType="none"
+	        android:focusable="false"
+	        android:ems="10" />
+	    <TextView
+	        android:id="@+id/lblRaio"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignRight="@+id/textView2"
+	        android:layout_below="@+id/txtData"
+	        android:layout_marginTop="25dp"
+	        android:text="@string/lblHora" />
+	    <TextView
+	        android:id="@+id/textView4"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/txtDesc"
+	        android:layout_alignLeft="@+id/lblRaio"
+	        android:text="@string/lblDesc" />
+	    <EditText
+	        android:id="@+id/txtData"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBaseline="@+id/textView2"
+	        android:layout_alignBottom="@+id/textView2"
+	        android:layout_alignLeft="@+id/txtHora"
+	        android:inputType="none"
+	        android:focusable="false"
+	        android:ems="10" >
+	    </EditText>
+
+	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/textView1"
+	        android:layout_below="@+id/cmbTipo"
+	        android:layout_marginTop="30dp"
+	        android:text="@string/lblData" />
+
+	</RelativeLayout>	    

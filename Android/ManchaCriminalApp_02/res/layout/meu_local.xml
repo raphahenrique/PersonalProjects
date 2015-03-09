@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+  	android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D9D9D9" 
+    android:theme="@android:style/Theme.NoTitleBar" >
+
+    <FrameLayout
+        android:id="@+id/mapaFrameLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="#a7a4a4" >
+
+        <fragment
+            android:id="@+id/map"
+            android:name="com.google.android.gms.maps.SupportMapFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <ToggleButton
+            android:id="@+id/btnAtiva"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btnAtiva" />
+
+    </FrameLayout>
+
+</RelativeLayout>

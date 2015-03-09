@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_Main"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#D9D9D9" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:text="@string/configuracoes"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <SeekBar
+        android:id="@+id/seekBarRaio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/lblAlteraRaio"
+        android:layout_marginTop="19dp"
+        android:max="100" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/txtDataConfig"
+        android:layout_below="@+id/txtDataConfig"
+        android:layout_marginTop="35dp"
+        android:text="@string/filtrar" />
+
+    <EditText
+        android:id="@+id/txtDataConfig"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lblAltera"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:focusable="false"
+        android:inputType="none" />
+
+    <CheckBox
+        android:id="@+id/chkFurto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chkAssalto"
+        android:layout_alignBottom="@+id/chkAssalto"
+        android:layout_alignRight="@+id/txtDataConfig"
+        android:text="@string/furto" />
+
+    <CheckBox
+        android:id="@+id/chkEstupro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chkFurto"
+        android:layout_below="@+id/chkFurto"
+        android:text="@string/estupro" />
+
+    <TextView
+        android:id="@+id/lblAltera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/seekBarRaio"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:text="@string/alteraData" />
+
+    <CheckBox
+        android:id="@+id/chkTrafico"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chkSequestro"
+        android:layout_alignBottom="@+id/chkSequestro"
+        android:layout_alignLeft="@+id/chkEstupro"
+        android:text="@string/trafico" />
+
+    <CheckBox
+        android:id="@+id/chkOutro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chkSequestro"
+        android:layout_below="@+id/chkSequestro"
+        android:text="@string/outro" />
+
+    <CheckBox
+        android:id="@+id/chkHomicidio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chkAssalto"
+        android:layout_below="@+id/chkAssalto"
+        android:text="@string/homicidio" />
+
+    <CheckBox
+        android:id="@+id/chkSequestro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/chkHomicidio"
+        android:layout_below="@+id/chkHomicidio"
+        android:text="@string/sequestro" />
+
+    <TextView
+        android:id="@+id/lblAlteraRaio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/chkOutro"
+        android:layout_below="@+id/textView1"
+        android:layout_marginTop="31dp"
+        android:text="@string/alteraRaio" />
+    
+    <TextView
+        android:id="@+id/lblRaio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/lblAlteraRaio"
+        android:layout_alignBottom="@+id/lblAlteraRaio"
+        android:layout_toRightOf="@+id/lblAltera"
+        android:text="1000m" />
+
+    <CheckBox
+        android:id="@+id/chkAssalto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/hold_check_boxes"
+        android:layout_below="@+id/textView2"
+        android:text="@string/assalto" />
+
+    <Button
+        android:id="@+id/btnSalvar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_below="@+id/chkOutro"
+        android:text="@string/salvar" />
+
+</RelativeLayout>
+</ScrollView>

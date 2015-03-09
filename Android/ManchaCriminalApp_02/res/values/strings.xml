@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ManchaCriminalApp</string>
+    <string name="action_settings">Configurações</string>
+    <string name="hello_world">Bem vindo !</string>
+    <string name="btnMeuLocal">Meu Local</string>
+    <string name="btnEst">Ver Mapa</string>
+    <string name="lblTipo">Tipo</string>
+    <string name="btnAtiva">Sim e nao</string>
+    <string name="lblData">Data</string>
+    <string name="lblHora">Hora</string>
+    <string name="lblDesc">Descrição</string>
+    <string name="lblAtiva">ON - Habilita Add Ocorr\nOFF - Visualizar as ocorrências</string>
+    <string name="refresh">Recarregar GPS</string>
+    <string name="configuracoes">Configurações</string>
+    <string name="alteraRaio">Raio de visualização </string>
+    <string name="alteraData">Mostrar ocorrências desde </string>
+    <string name="filtrar">Filtrar ocorrências por </string>
+    <string name="assalto">Assalto</string>
+    <string name="furto">Furto</string>
+    <string name="estupro">Estupro</string>
+    <string name="homicidio">Homícido</string>
+    <string name="sequestro">Sequestro</string>
+    <string name="trafico">Tráfico</string>
+    <string name="outro">Outros</string>
+    <string name="salvar">Salvar</string>
+    <string name="limpar">Limpar ocorrencia</string>
+
+</resources>
