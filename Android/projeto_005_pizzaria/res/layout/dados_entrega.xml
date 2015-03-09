@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_dadosEntrega"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="508dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pedido_lblNumEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pedido_txtNumEnd"
+            android:layout_alignBottom="@+id/pedido_txtNumEnd"
+            android:layout_alignLeft="@+id/pedido_lblEndereco"
+            android:text="@string/pedido_numEndereco" />
+
+        <TextView
+            android:id="@+id/pedido_lblBairro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pedido_txtBairro"
+            android:layout_alignBottom="@+id/pedido_txtBairro"
+            android:layout_alignLeft="@+id/pedido_lblNumEnd"
+            android:text="@string/pedido_bairro" />
+
+        <Spinner
+            android:id="@+id/pedido_spCidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pedido_spUf"
+            android:layout_alignRight="@+id/pedido_spUf"
+            android:layout_below="@+id/pedido_spUf"
+            android:layout_marginTop="5dp"
+            android:popupBackground="#363636" />
+
+        <TextView
+            android:id="@+id/pedido_lblNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/pedido_nome" />
+
+        <Spinner
+            android:id="@+id/pedido_spUf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pedido_txtTelefone"
+            android:layout_alignRight="@+id/pedido_txtTelefone"
+            android:layout_below="@+id/pedido_txtTelefone"
+            android:layout_marginTop="5dp"
+            android:popupBackground="#363636" />
+
+        <TextView
+            android:id="@+id/pedido_lblUf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pedido_lblNome"
+            android:layout_alignTop="@+id/pedido_spUf"
+            android:layout_marginTop="8dp"
+            android:text="@string/pedido_uf" />
+
+        <EditText
+            android:id="@+id/pedido_txtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pedido_lblNome"
+            android:layout_alignBottom="@+id/pedido_lblNome"
+            android:layout_alignLeft="@+id/pedido_txtTelefone"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="100" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/pedido_txtTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pedido_txtNome"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/pedido_lblEndereco"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="14" />
+
+        <TextView
+            android:id="@+id/pedido_lblTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pedido_txtTelefone"
+            android:layout_alignBottom="@+id/pedido_txtTelefone"
+            android:layout_alignLeft="@+id/pedido_lblNome"
+            android:text="@string/pedido_telefone" />
+
+        <TextView
+            android:id="@+id/pedido_lblEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/pedido_txtEndereco"
+            android:layout_alignBottom="@+id/pedido_txtEndereco"
+            android:layout_alignLeft="@+id/pedido_lblUf"
+            android:text="@string/pedido_endereco" />
+
+        <EditText
+            android:id="@+id/pedido_txtBairro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pedido_txtNumEnd"
+            android:layout_below="@+id/pedido_txtNumEnd"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:maxLength="60" />
+
+        <EditText
+            android:id="@+id/pedido_txtEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pedido_spCidade"
+            android:layout_below="@+id/pedido_spCidade"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="100" />
+
+        <EditText
+            android:id="@+id/pedido_txtNumEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pedido_txtEndereco"
+            android:layout_below="@+id/pedido_txtEndereco"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="5" />
+
+        <TextView
+            android:id="@+id/pedido_lblCidade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pedido_lblUf"
+            android:layout_alignTop="@+id/pedido_spCidade"
+            android:layout_marginTop="8dp"
+            android:text="@string/pedido_cidade" />
+
+        <Button
+            android:id="@+id/pedido_btnCancelar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pedido_btnConfirmar"
+            android:background="@drawable/botao_vermelho"
+            android:text="@string/cancelar_pedido"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/pedido_btnConfirmar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/pedido_txtBairro"
+            android:layout_marginTop="41dp"
+            android:background="@drawable/botao_preto"
+            android:text="@string/pedido_confirmar"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <CheckBox
+            android:id="@+id/pedido_chkSalvarPref"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/pedido_lblBairro"
+            android:layout_alignRight="@+id/pedido_txtBairro"
+            android:layout_below="@+id/pedido_txtBairro"
+            android:text="@string/pedido_chkSalvarPref" />
+
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/infoped_txtNumPed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:text="@string/infoped_numpedido"
+        android:textColor="#EE0000"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <ListView
+        android:id="@+id/infoped_lvItens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_above="@+id/infoped_txtValorTotal"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/infoped_txtNumPed"
+        android:layout_marginBottom="25dp" >
+
+    </ListView>
+
+    <TextView
+        android:id="@+id/infoped_lblTroco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/infoped_txtTroco"
+        android:layout_alignLeft="@+id/infoped_lblValorTotal"
+        android:text="@string/pag_troco"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/infoped_txtValorTotal"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/infoped_lblValorTotal"
+        android:layout_toRightOf="@+id/infoped_lblTroco"
+        android:gravity="end"
+        android:layout_marginRight="34dp"
+        android:text="@string/cardapio_valor"
+        android:textColor="#228B22"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoped_txtTroco"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/infoped_txtValorTotal"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/infoped_txtValorTotal"
+        android:layout_marginTop="10dp"
+        android:gravity="end"
+        android:text="@string/cardapio_valor"
+        android:textColor="#2f6699"
+        android:textSize="25sp"
+        android:layout_marginRight="34dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/infoped_btnCancelar"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/botao_vermelho"
+        android:text="@string/cancelar_pedido"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/infoped_btnVoltarMenu"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/infoped_btnCancelar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/botao_preto"
+        android:text="@string/infoped_voltarMenu"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/infoped_lblValorTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/infoped_btnVoltarMenu"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="113dp"
+        android:text="@string/pag_valorTotal"
+        android:textSize="22sp" />
+
+</RelativeLayout>

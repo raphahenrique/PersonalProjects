@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="30dp" >
+
+    <TextView
+        android:id="@+id/listaInfo_lblDescricaoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listaInfo_lblDescricaoProd"
+        android:layout_alignRight="@+id/listaInfo_lblQuantidade"
+        android:layout_below="@+id/listaInfo_lblDescricaoProd"
+        android:text="@+id/label"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/listaInfo_lblDescricaoProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/listaInfo_lblQuantidade"
+        android:layout_marginLeft="24dp"
+        android:text="@+id/label"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/listaInfo_lblQtd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listaInfo_lblDescricaoItem"
+        android:layout_below="@+id/listaInfo_lblDescricaoItem"
+        android:text="@string/infoped_qtd"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/listaInfo_lblQuantidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/listaInfo_lblDescricaoItem"
+        android:layout_marginRight="20dp"
+        android:gravity="end"
+        android:text="@string/label"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/listaInfo_txtPrecoFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/listaInfo_lblQuantidade"
+        android:layout_below="@+id/listaInfo_lblQuantidade"
+        android:text="@+id/label"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listaInfo_lblPrecoFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/listaInfo_txtPrecoFinal"
+        android:layout_alignBottom="@+id/listaInfo_txtPrecoFinal"
+        android:layout_alignLeft="@+id/listaInfo_lblQtd"
+        android:text="@string/infoped_total"
+        android:textSize="14sp" />
+
+</RelativeLayout>

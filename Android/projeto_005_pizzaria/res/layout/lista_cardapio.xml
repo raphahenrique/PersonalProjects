@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp" >
+
+    <TextView
+        android:id="@+id/listaCardapio_descricao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="16dp"
+        android:layout_toRightOf="@+id/listaCardapio_imgCardapio"
+        android:text="@+id/label"
+        android:textSize="13sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listaCardapio_noItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/listaCardapio_btnAdicionar"
+        android:layout_centerHorizontal="true"
+        android:text="@string/listaCardapio_noItens"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <ImageView
+        android:id="@+id/listaCardapio_imgCardapio"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/listaCardapio_descricao"
+        android:contentDescription="@string/cardapio_categoria" />
+
+    <TextView
+        android:id="@+id/listaCardapio_lblPreco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/listaCardapio_imgCardapio"
+        android:layout_alignLeft="@+id/listaCardapio_descricao"
+        android:text="@+id/label"
+        android:textColor="#EE0000"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listaCardapio_detalhes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/listaCardapio_lblPreco"
+        android:layout_alignLeft="@+id/listaCardapio_descricao"
+        android:layout_alignTop="@+id/listaCardapio_btnAdicionar"
+        android:layout_toLeftOf="@+id/listaCardapio_btnAdicionar"
+        android:text="@+id/label"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/listaCardapio_btnAdicionar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/listaCardapio_descricao"
+        android:background="@drawable/green" />
+
+</RelativeLayout>

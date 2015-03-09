@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">BSE Pizzaria</string>
+    <string name="action_settings">Settings</string>
+    <string name="label">label</string>
+    <string name="cancelar_pedido">Cancelar Pedido</string>
+    <string name="continuar">Continuar</string>
+
+    <!-- HOME -->
+    <string name="home_ver_cardapio">Ver Cardápio</string>
+    <string name="home_pedidos_recentes">Pedidos Recentes</string>
+    <string name="home_config">Configurações</string>
+   
+
+    <!-- CONFIG -->
+    <string name="config_main">Configurações de Entrega</string>
+	<string name="config_salvar">Salvar</string>
+    <string name="config_voltar">Voltar</string>
+    
+	
+    <!-- LOCALIZACAO -->
+    <string name="menu_pagina_inicial">Página Inicial</string>
+    <string name="menu_uf_disponivel">Estado</string>
+    <string name="menu_cidade_disponivel">Cidade</string>
+    <string name="menu_descricao_localizacao">Selecione um local disponível para entrega:</string>
+    <string name="menu_sair">Sair</string>
+    
+    <!-- CARDÁPIO -->
+    <string name="cardapio_categoria">Categoria</string>
+    <string name="cardapio_adicionar">Adicionar</string>
+    <string name="cardapio_valor_total">Total:</string>
+    <string name="cardapio_valor">R$ 0,00</string>
+    <string name="cardapio_fazer_pedido">Fazer Pedido</string>
+    <string name="cardapio_voltar">Voltar</string>
+    
+    <!-- LISTA CARDÁPIO -->
+    <string name="listaCardapio_detalhes">Ver detalhes</string>
+    <string name="listaCardapio_noItens">Não há itens</string>
+    
+    <!-- LISTA CONFIRMAÇÃO -->
+    <string name="confirmacao_confirmar">Confirmar</string>
+    <string name="confirmacao_preco_unitario">Preço unitário: </string>
+    <string name="confirmacao_adicionar">Adicionar mais itens</string>
+    
+    <!-- PEDIDO -->
+    <string name="pedido_entrega">Dados para entrega</string>
+    <string name="pedido_nome">Nome</string>
+    <string name="pedido_telefone">Telefone</string>
+    <string name="pedido_endereco">Endereço</string>
+    <string name="pedido_numEndereco">Nº</string>
+    <string name="pedido_bairro">Bairro</string>
+    <string name="pedido_cidade">Cidade</string>
+    <string name="pedido_uf">UF</string>
+    <string name="pedido_confirmar">Confirmar</string>
+    <string name="pedido_chkSalvarPref">Lembrar meus dados</string>
+    
+    <!-- PAGAMENTO -->
+    <string name="pag_formaPag">Pagamento</string>
+    <string name="pag_trocoPara">Troco para R$</string>
+    <string name="pag_valorTotal">Total:</string>
+    <string name="pag_troco">Troco:</string>
+    <string name="pag_finalizar">Finalizar Pedido</string>
+    
+    <!-- INFO PEDIDO -->
+    <string name="infoped_numpedido">Pedido Nº </string>
+    <string name="infoped_voltarMenu">Voltar ao menu</string>
+    <string name="infoped_qtd">Quantidade:</string>
+    <string name="infoped_total">Total:</string>
+</resources>

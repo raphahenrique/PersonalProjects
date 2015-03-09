@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_dadosEntrega"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="777dp" >
+
+        <TextView
+            android:id="@+id/loc_lblEstadoDisp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/loc_btnContinuar"
+            android:layout_below="@+id/loc_lblDescricaoLoc"
+            android:layout_marginTop="51dp"
+            android:text="@string/menu_uf_disponivel"
+            android:textSize="22sp" />
+
+        <Spinner
+            android:id="@+id/loc_spEstadoDisp"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            android:layout_below="@+id/loc_lblDescricaoLoc"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:popupBackground="#363636" />
+
+        
+
+        <TextView
+            android:id="@+id/loc_lblDescricaoLoc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="59dp"
+            android:text="@string/menu_descricao_localizacao"
+            android:textColor="#2f6699"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+        <Spinner
+            android:id="@+id/loc_spCidadeDisp"
+            android:layout_width="180dp"
+            android:layout_height="80dp"
+            android:layout_alignLeft="@+id/loc_spEstadoDisp"
+            android:layout_alignRight="@+id/loc_btnContinuar"
+            android:layout_below="@+id/loc_spEstadoDisp"
+            android:popupBackground="#363636" />
+
+        <TextView
+            android:id="@+id/lblCidadeDisp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/loc_lblEstadoDisp"
+            android:layout_alignTop="@+id/loc_spCidadeDisp"
+            android:layout_marginTop="25dp"
+            android:text="@string/menu_cidade_disponivel"
+            android:textSize="22sp" />
+
+        <Button
+            android:id="@+id/loc_btnContinuar"
+            android:layout_width="400dp"
+            android:layout_height="80dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/black_button"
+            android:text="@string/continuar"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

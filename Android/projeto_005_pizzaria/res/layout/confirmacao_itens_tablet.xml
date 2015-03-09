@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ListView
+        android:id="@+id/confirmacao_listItens"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirmacao_btnAdicionar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" >
+    </ListView>
+
+    <Button
+        android:id="@+id/confirmacao_btnCancelar"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/botao_vermelho"
+        android:text="@string/cancelar_pedido"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/confirmacao_btnConfirmar"
+        android:layout_width="400dp"
+        android:layout_height="70dp"
+        android:layout_above="@+id/confirmacao_btnCancelar"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/botao_preto"
+        android:text="@string/confirmacao_confirmar"
+        android:textColor="#FFFFFF"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/confirmacao_lblValorTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/confirmacao_btnConfirmar"
+        android:layout_marginBottom="57dp"
+        android:layout_toLeftOf="@+id/confirmacao_btnAdicionar"
+        android:text="@string/cardapio_valor_total"
+        android:textSize="22sp" />
+
+    <TextView
+        android:id="@+id/confirmacao_txtValorTotal"
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/confirmacao_lblValorTotal"
+        android:layout_alignRight="@+id/confirmacao_btnAdicionar"
+        android:layout_toRightOf="@+id/confirmacao_lblValorTotal"
+        android:gravity="end"
+        android:text="@string/cardapio_valor"
+        android:textColor="#228B22"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/confirmacao_btnAdicionar"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_above="@+id/confirmacao_txtValorTotal"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="57dp"
+        android:layout_marginRight="34dp"
+        android:background="@drawable/botao_azul"
+        android:text="@string/confirmacao_adicionar"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
+
+</RelativeLayout>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.projeto_005_pizzaria"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="18" />
+    
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icone_pizzaria"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        
+        <activity
+            android:name="br.com.bse.main.MenuPrincipal"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="br.com.bse.pedidosrecentes.PedidosRecentes"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name"  >
+        </activity>
+        
+        
+        
+        <activity
+            android:name="br.com.bse.localizacao.Localizacao"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name"  >
+        </activity>
+		
+        <activity
+            android:name="br.com.bse.configuracoes.Configuracoes"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name"  >
+        </activity>
+        
+        <activity
+            android:name="br.com.bse.cardapio.Cardapio"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"  >
+        </activity>
+        
+        <activity
+            android:name="br.com.bse.confirmacao.ListaConfirmacao"
+            android:configChanges="orientation|screenSize"
+            android:windowSoftInputMode="adjustPan"
+            android:label="@string/app_name"  >
+        </activity>
+        
+        <activity
+            android:name="br.com.bse.dadosentrega.DadosEntrega"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"  >
+        </activity>
+        
+        <activity
+            android:name="br.com.bse.pagamento.Pagamento"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"  >
+        </activity>
+        
+        <activity
+            android:name="br.com.bse.infopedido.InfoPedido"
+            android:configChanges="orientation|screenSize"
+            android:label="@string/app_name"  >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scroll_configuracoes"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/config_lblNumEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/config_txtNumEnd"
+            android:layout_alignBottom="@+id/config_txtNumEnd"
+            android:layout_alignLeft="@+id/config_lblEndereco"
+            android:text="@string/pedido_numEndereco" />
+
+        <TextView
+            android:id="@+id/config_lblBairro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/config_txtBairro"
+            android:layout_alignBottom="@+id/config_txtBairro"
+            android:layout_alignLeft="@+id/config_lblNumEnd"
+            android:text="@string/pedido_bairro" />
+
+        <TextView
+            android:id="@+id/config_lblNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/pedido_nome" />
+
+        <EditText
+            android:id="@+id/config_txtNome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/config_lblNome"
+            android:layout_alignBottom="@+id/config_lblNome"
+            android:layout_alignLeft="@+id/config_txtTelefone"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="100" >
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/config_txtTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/config_txtNome"
+            android:layout_marginLeft="14dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@+id/config_lblEndereco"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="14" />
+
+        <TextView
+            android:id="@+id/config_lblTelefone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/config_txtTelefone"
+            android:layout_alignBottom="@+id/config_txtTelefone"
+            android:layout_alignLeft="@+id/config_lblNome"
+            android:text="@string/pedido_telefone" />
+
+        <TextView
+            android:id="@+id/config_lblEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/config_txtEndereco"
+            android:layout_alignBottom="@+id/config_txtEndereco"
+            android:layout_alignLeft="@+id/config_lblNome"
+            android:text="@string/pedido_endereco" />
+
+        <EditText
+            android:id="@+id/config_txtBairro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/config_txtNumEnd"
+            android:layout_below="@+id/config_txtNumEnd"
+            android:ems="10"
+            android:inputType="textPostalAddress"
+            android:maxLength="60" />
+
+        <EditText
+            android:id="@+id/config_txtEndereco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/config_txtTelefone"
+            android:layout_below="@+id/config_txtTelefone"
+            android:layout_marginTop="14dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:maxLength="100" />
+
+        <EditText
+            android:id="@+id/config_txtNumEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/config_txtEndereco"
+            android:layout_below="@+id/config_txtEndereco"
+            android:ems="10"
+            android:inputType="number"
+            android:maxLength="5" />
+
+        <Button
+            android:id="@+id/config_btnSalvar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/config_txtBairro"
+            android:layout_marginTop="37dp"
+            android:background="@drawable/botao_preto"
+            android:text="@string/config_salvar"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/config_btnVoltar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/config_btnSalvar"
+            android:background="@drawable/botao_vermelho"
+            android:text="@string/config_voltar"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/config_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="@string/config_main"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+</ScrollView>

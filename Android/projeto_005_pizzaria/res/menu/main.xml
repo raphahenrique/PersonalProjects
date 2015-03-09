@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <item
+        android:id="@+id/menu_item_cardapio"
+        android:orderInCategory="0"
+        android:title="@string/home_ver_cardapio"/>
+    <item
+        android:id="@+id/menu_item_pedidos_recentes"
+        android:orderInCategory="1"
+        android:title="@string/home_pedidos_recentes"/>
+    <item
+        android:id="@+id/menu_item_sair"
+        android:orderInCategory="2"
+        android:title="@string/menu_sair"/>
+
+</menu>

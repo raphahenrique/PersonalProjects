@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="25dp" >
+
+    <EditText
+        android:id="@+id/listaConf_txtQuantidade"
+        android:layout_width="45dp"
+        android:layout_height="40dp"
+        android:layout_alignParentLeft="true"
+        android:descendantFocusability="beforeDescendants"
+        android:inputType="number"
+        android:textSize="14sp" >
+    </EditText>
+
+    <Button
+        android:id="@+id/listaConf_btnExcluir"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/close" />
+
+    <TextView
+        android:id="@+id/listaConf_lblDescricaoProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/listaConf_txtQuantidade"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/listaConf_txtQuantidade"
+        android:text="@+id/label"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/listaConf_lblPrecoUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/listaConf_lblDescricaoItem"
+        android:layout_below="@+id/listaConf_txtQuantidade"
+        android:layout_marginTop="14dp"
+        android:text="@string/confirmacao_preco_unitario"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/listaConf_lblPrecoProd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/listaConf_lblPrecoUnit"
+        android:layout_alignBottom="@+id/listaConf_lblPrecoUnit"
+        android:layout_marginLeft="14dp"
+        android:layout_toRightOf="@+id/listaConf_lblPrecoUnit"
+        android:text="@string/label"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/listaConf_lblDescricaoItem"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/listaConf_lblPrecoProd"
+        android:layout_alignLeft="@+id/listaConf_lblDescricaoProd"
+        android:layout_below="@+id/listaConf_lblDescricaoProd"
+        android:layout_toLeftOf="@+id/listaConf_btnExcluir"
+        android:text="@string/label"
+        android:textSize="14sp" />
+
+</RelativeLayout>
