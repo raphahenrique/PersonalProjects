@@ -1,0 +1,26 @@
+﻿Build started 23/06/2014 12:26:45.
+     1>Project "C:\Users\raphael\Documents\Visual Studio 2013\Projects\SuperTrunfo\SuperTrunfo\SuperTrunfo.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\\" /AI"C:\Program Files (x86)\Windows Kits\8.1\References\CommonConfiguration\Neutral" /AI"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\Facades\\" /Zi /clr /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _UNICODE /D UNICODE /EHa /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /TP /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\mscorlib.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Data.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Drawing.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Windows.Forms.dll" /FU"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.5\System.Xml.dll" /analyze- /errorReport:prompt /clr:nostdlib TelaJogo.cpp main.cpp
+         TelaJogo.cpp
+     1>c:\users\raphael\documents\visual studio 2013\projects\supertrunfo\supertrunfo\TelaJogo.h(385): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\raphael\documents\visual studio 2013\projects\supertrunfo\supertrunfo\TelaJogo.h(731): warning C4101: 'numero1' : unreferenced local variable
+     1>c:\users\raphael\documents\visual studio 2013\projects\supertrunfo\supertrunfo\TelaJogo.h(731): warning C4101: 'numero2' : unreferenced local variable
+         main.cpp
+     1>c:\users\raphael\documents\visual studio 2013\projects\supertrunfo\supertrunfo\TelaJogo.h(385): warning C4244: 'argument' : conversion from 'time_t' to 'unsigned int', possible loss of data
+     1>c:\users\raphael\documents\visual studio 2013\projects\supertrunfo\supertrunfo\TelaJogo.h(731): warning C4101: 'numero1' : unreferenced local variable
+     1>c:\users\raphael\documents\visual studio 2013\projects\supertrunfo\supertrunfo\TelaJogo.h(731): warning C4101: 'numero2' : unreferenced local variable
+         Generating Code...
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\raphael\Documents\Visual Studio 2013\Projects\SuperTrunfo\Debug\SuperTrunfo.exe" /INCREMENTAL /NOLOGO /ASSEMBLYRESOURCE:Debug\SuperTrunfo.Resource.resources /ASSEMBLYRESOURCE:Debug\SuperTrunfo.TelaJogo.resources /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\raphael\Documents\Visual Studio 2013\Projects\SuperTrunfo\Debug\SuperTrunfo.pdb" /ASSEMBLYDEBUG /TLBID:1 /DYNAMICBASE /FIXED:NO /NXCOMPAT /MACHINE:X86 Debug\Carta.obj
+         Debug\Fila.obj
+         Debug\main.obj
+         Debug\Node.obj
+         Debug\TelaJogo.obj
+         "Debug\.NETFramework,Version=v4.5.AssemblyAttributes.obj"
+         SuperTrunfo.vcxproj -> C:\Users\raphael\Documents\Visual Studio 2013\Projects\SuperTrunfo\Debug\SuperTrunfo.exe
+     1>Done Building Project "C:\Users\raphael\Documents\Visual Studio 2013\Projects\SuperTrunfo\SuperTrunfo\SuperTrunfo.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:03.91
