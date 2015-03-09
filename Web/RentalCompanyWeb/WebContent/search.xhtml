@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template/BasicTemplate.xhtml">
+
+	<ui:define name="content">
+		<p:panel id="searchInfo" style="margin-bottom:20px">
+
+			<h:outputText value="Pick Up Location - #{home.selectedLocation}">
+				<f:param name="location" value="#{home.selectedLocation}" />
+			</h:outputText>
+			<br />
+			<h:outputText value="From:" />
+			<h:outputText value="#{home.fromDate}">
+				<f:convertDateTime pattern="MM/dd/yyyy" />
+				<f:param name="fromDate" value="#{home.fromDate}" />
+			</h:outputText>
+			<h:outputText value="  Time:" />
+			<h:outputText value="#{home.timeFrom}">
+				<f:convertDateTime pattern="HH:mm a" />
+				<f:param name="timeFromDate" value="#{home.timeFrom}" />
+			</h:outputText>
+			<br />
+			<h:outputText value="To:" />
+			<h:outputText value="#{home.toDate}">
+				<f:convertDateTime pattern="MM/dd/yyyy" />
+				<f:param name="toDate" value="#{home.toDate}" />
+			</h:outputText>
+			<h:outputText value="  Time:" />
+			<h:outputText value="#{home.timeTo}">
+				<f:convertDateTime pattern="HH:mm a" />
+				<f:param name="timeToDate" value="#{home.timeTo}" />
+			</h:outputText>
+			<br />
+
+		</p:panel>
+		<h:form>
+			<p:panel id="resultFromSearch" style="margin-bottom:20px">
+				<p:dataGrid var="car" value="#{searchDataGrid.cars}" columns="1"
+					layout="grid" rows="6" paginator="true" id="carsGrid"
+					paginatorTemplate="{CurrentPageReport}  {FirstPageLink} {PreviousPageLink} {PageLinks} {NextPageLink} {LastPageLink} {RowsPerPageDropdown}">
+
+					<f:facet name="header">
+           			 	Available cars
+        			</f:facet>
+
+					<p:panel header="#{car.car_type}" style="text-align:center">
+						<h:panelGrid columns="1" style="width:100%">
+
+							<h:outputText value="#{car.model}" />
+							<br />
+							<h:outputText value="#{car.price}" />
+							<br />
+							
+							<p:commandButton value="SELECT" id="btnSelect" action="#{searchDataGrid.finish}" >
+								<f:setPropertyActionListener value="#{car}" target="#{searchDataGrid.selectedCar}" />
+							</p:commandButton>
+
+						</h:panelGrid>
+					</p:panel>
+
+				</p:dataGrid>
+
+				<p:commandButton value="FINISH" id="btnFinish" action="FinishPage" />
+			</p:panel>
+		</h:form>
+	</ui:define>
+
+
+</ui:composition>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template/BasicTemplate.xhtml">
+
+
+	<ui:define name="content">
+		<h:form>
+			<h:outputLabel for="selectorPickup" value="Location to pickup" />
+			<h:selectOneMenu id="selectorPickup" value="#{home.selectedLocation}"
+				required="true">
+				<f:selectItems value = "#{home.location}">
+				</f:selectItems>
+			</h:selectOneMenu>
+			<br />
+
+			<p:outputLabel for="calFrom" value="From:" />
+			<p:calendar id="calFrom" value="#{home.fromDate}" showOn="button" />
+			<p:outputLabel for="time1" value="Time:" />
+			<p:calendar id="time1" value="#{home.timeFrom}" pattern="HH:mm a"
+				timeOnly="true" maxMinute="0" />
+			<br />
+
+			<p:outputLabel for="calTo" value="To:" />
+			<p:calendar id="calTo" value="#{home.toDate}" showOn="button" />
+			<p:outputLabel for="time2" value="Time:" />
+			<p:calendar id="time2" value="#{home.timeTo}" pattern="HH:mm a"
+				timeOnly="true" maxMinute="0" />
+
+			<br />
+			<h:outputLabel for="txtAge" value="Age:" />
+			<p:inputText id="txtAge" value="#{home.age}" required="true"
+				label="text" />
+
+			<br />
+			<p:commandButton value="SEARCH" id="btnSearch" action="#{home.search}" />
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

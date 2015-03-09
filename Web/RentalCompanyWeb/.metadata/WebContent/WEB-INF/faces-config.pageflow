@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14163416011800" configfile="/RentalCompany/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="home.xhtml" x="148" y="221" id="pf14163447485601" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14163447485602" path="/home.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="search.xhtml" x="360" y="221" id="pf14163447485603" referenceLink="//@navigationRule.1/@fromViewId|" outlinks="pf14164499682940" inlinks="pf14163447485602" path="/search.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="finish.xhtml" x="624" y="221" id="pf14164499682951" referenceLink="//@navigationRule.1/@navigationCase.0/@toViewId|" outlinks="pf14176428871500" inlinks="pf14164499682940" path="/finish.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="end.xhtml" x="876" y="221" id="pf14176428871501" inlinks="pf14176428871500" path="/end.xhtml"/>
+  <links id="pf14163447485602" target="pf14163447485603" source="pf14163447485601" outcome="Search"/>
+  <links id="pf14164499682940" target="pf14164499682951" source="pf14163447485603" outcome="FinishPage"/>
+  <links id="pf14176428871500" target="pf14176428871501" source="pf14164499682951" outcome="End"/>
+</pageflow:Pageflow>

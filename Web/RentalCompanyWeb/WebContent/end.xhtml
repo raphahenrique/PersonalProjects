@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template/BasicTemplate.xhtml">
+
+	<ui:define name="content">
+		<p:panel id="searchInfo" style="margin-bottom:20px">
+
+			<br />
+			<h:outputLabel for="txtFname" value="#{end.firstName}" />
+			<br />
+			<h:outputLabel for="txtMiddletName" value="#{end.middleName}" />
+			<br />
+			<h:outputLabel for="txtLastName" value="#{end.lastName}" />
+
+			<br />
+			<h:outputLabel for="txtLicense" value="#{end.licenseNumber}" />
+
+			<br />
+		<h:outputLabel for="txtLicensed" value="RESERVED !" />
+
+		</p:panel>
+	</ui:define>
+
+
+</ui:composition>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+
+<ui:composition template="/WEB-INF/template/BasicTemplate.xhtml">
+
+	<ui:define name="content">
+		<p:panel id="userRegister" style="margin-bottom:20px">
+			<br />
+			<h:outputLabel for="txtFirstName" value="First Name:" />
+			<p:inputText id="txtFirstName" value="#{user.firstName}"
+				required="true" label="text" />
+
+			<h:outputLabel for="txtMiddletName" value="Middle Name:" />
+			<p:inputText id="txtMiddleName" value="#{user.middleName}"
+				label="text" />
+
+			<h:outputLabel for="txtLastName" value="Last Name:" />
+			<p:inputText id="txtLastName" value="#{user.lastName}"
+				required="true" label="text" />
+
+			<br />
+			<h:outputLabel for="txtLicense" value="License Number:" />
+			<p:inputText id="txtLicense" value="#{user.licenseNumber}"
+				required="true" label="text" />
+
+			<h:form>
+				<br />
+				<h:outputText
+					value="Price per day U$ - #{searchDataGrid.selectedCar.price}">
+				</h:outputText>
+				<br />
+				<h:outputText
+					value="TOTAL U$ - #{user.finalPrice}">
+				</h:outputText>
+				<br />
+				<p:commandButton value="REGISTER" id="btnRegister" action="#{user.end}" >
+				</p:commandButton>
+
+			</h:form>
+		</p:panel>
+
+
+	</ui:define>
+
+</ui:composition>
+</html>
